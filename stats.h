@@ -9,32 +9,78 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h 
+ * @brief Function declarations for stats.c
  *
- * <Add Extended Description Here>
- *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author RESHMA KOTAMSETTY
+ * @date April 14, 2019
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
+/**
+ * @brief A function that prints the statistics of an array including minimum, 
+ * maximum, mean, and median
+ *
+ * @param array: The given array for which the statistics need to be printed
+ * @param length: Length of the given array
+ * @return none
+ */
+void print_statistics(unsigned char * a, unsigned int len);
 
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief Given an array of data and a length, prints the array to the screen
  *
- * <Add Extended Description Here>
- *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- *
- * @return <Add Return Informaiton here>
+ * @param array: The given array to be printed
+ * @param length: Length of the given array
+ * @return none
  */
+void print_array(unsigned char * a, unsigned int len);
 
+/**
+ * @brief Given an array of data and a length, returns its median value
+ *
+ * @param array: The given array for which the median need to be computed
+ * @param length: Length of the given array
+ * @return The median of given array
+ */
+unsigned char find_median(unsigned char * a, unsigned int len);
+
+/**
+ * @brief Given an array of data and a length, returns its mean value
+ *
+ * @param array: The given array for which the mean needs to be computed
+ * @param length: Length of the given array
+ * @return The mean of given array
+ */
+unsigned char find_mean(unsigned char * a, unsigned int len);
+
+/**
+ * @brief Given an array of data and a length, returns the maximum
+ *
+ * @param array: The given array
+ * @param length: Length of the given array
+ * @return The maximum of given array
+ */
+unsigned char find_maximum(unsigned char * a, unsigned int len);
+
+/**
+ * @brief Given an array of data and a length, returns its minimum
+ *
+ * @param array: The given array
+ * @param length: Length of the given array
+ * @return The minimum of given array
+ */
+unsigned char find_minimum(unsigned char * a, unsigned int len);
+
+/**
+ * Given an array of data and a length, sorts the array from largest to smallest
+ *
+ * @param array: The given array 
+ * @param length: Length of the given array
+ * @return none
+ */
+void sort_array(unsigned char * a, unsigned int len);
 
 #endif /* __STATS_H__ */
